@@ -1,3 +1,27 @@
-data/
+# Datasets (trop lourds pour Git)
+data/*
+!data/.gitkeep
 *.csv
+*.parquet
+
+# Secrets et variables d'environnement
 .env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Jars Flink (fichiers lourds)
+flink/lib/*.jar
+
+# Logs
+*.log
+
+# Éditeurs et système
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
