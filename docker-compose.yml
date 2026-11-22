@@ -125,6 +125,7 @@ services:
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./data:/opt/airflow/data        # datasets CSV
+      - ./producer.py:/opt/airflow/scripts/producer.py   # script de rejeu, lancé par le DAG
       - airflow_data:/opt/airflow
 
 volumes:
